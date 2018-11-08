@@ -146,6 +146,7 @@ else:
 
     # Add a NUC eNB node.
     enb1 = request.RawPC("enb1")
+    enb1.component_id = "nuc4"
     if params.FIXED_ENB:
         enb1.component_id = params.FIXED_ENB
     enb1.hardware_type = GLOBALS.NUC_HWTYPE
